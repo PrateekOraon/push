@@ -62,5 +62,5 @@
 // });
 
 self.addEventListener('push', () => {
-  self.registration.sendNotification('test message', {});
+  self.registration.showNotification('test message from Prateek', {});
 })
