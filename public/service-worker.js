@@ -61,6 +61,8 @@
 //   }
 // });
 
-self.addEventListener('push', () => {
-  self.registration.showNotification('test message from Prateek', {});
+self.addEventListener('push', (e) => {
+  e.waitUntil(
+    self.registration.showNotification('test message from Prateek', {})
+  );
 })

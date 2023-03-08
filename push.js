@@ -7,7 +7,7 @@ let vapidkeys = {
 
 push.setVapidDetails('mailto:oraonprateek251@gmail.com', vapidkeys.publicKey, vapidkeys.privateKey);
 
-let sub = { endpoint: "https://fcm.googleapis.com/fcm/send/fiSMZqkhcM4:APA91bHqbNMQUOGXDI_WIT5VekgoHJmIIDrPSI7NYXDaZKWl4OqpgLnHjHDovDk3TCc6LIOadCGJJ2n4hYNgdmi_zwnPwK1ZUeTSscg1VEDtK56VUIVMlBgET2Kc_kyrZ5UstyH6SCB3", expirationTime: null, keys: { p256dh: "BAbCdC9YTyk7SMCa7u3mDdPDFUEvsTIlsHf8IQS4MxxPU2TbEVdNN1EBLkzclT5C5wevMIhP8S792LEzYAuZPNA", auth: "lAgs_G7CHCZ5tJGeXZ0bQA" } };
+let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/fiSMZqkhcM4:APA91bHqbNMQUOGXDI_WIT5VekgoHJmIIDrPSI7NYXDaZKWl4OqpgLnHjHDovDk3TCc6LIOadCGJJ2n4hYNgdmi_zwnPwK1ZUeTSscg1VEDtK56VUIVMlBgET2Kc_kyrZ5UstyH6SCB3","expirationTime":null,"keys":{"p256dh":"BAbCdC9YTyk7SMCa7u3mDdPDFUEvsTIlsHf8IQS4MxxPU2TbEVdNN1EBLkzclT5C5wevMIhP8S792LEzYAuZPNA","auth":"lAgs_G7CHCZ5tJGeXZ0bQA"}};
 
 push.sendNotification(sub, 'test message from Prateek')
 .then(() => console.log("done"))
